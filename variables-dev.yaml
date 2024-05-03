@@ -2,9 +2,9 @@ MONGODB_HOST: mongodb-dev.bigmatrix.in  # submit your host
 REDIS_HOST: redis-dev.bigmatrix.in 
 MYSQL_HOST: mysql-dev.bigmatrix.in 
 RABBITMQ_HOST: rabbitmq-dev.bigmatrix.in 
-CATALOGUE_HOST: catalogue-dev.bigmatrix.in 
-USER_HOST: user-dev.bigmatrix.in 
-CART_HOST: cart-dev.bigmatrix.in 
-SHIPPING_HOST: shipping-dev.bigmatrix.in 
-PAYMENT_HOST: payment-dev.bigmatrix.in 
-DISPATCH_HOST: dispatch-dev.bigmatrix.in 
+CATALOGUE_HOST: catalogue.app-dev.bigmatrix.in 
+USER_HOST: user.app-dev.bigmatrix.in 
+CART_HOST: cart.app-dev.bigmatrix.in 
+SHIPPING_HOST: shipping.app-dev.bigmatrix.in 
+PAYMENT_HOST: payment.app-dev.bigmatrix.in 
+DISPATCH_HOST: dispatch.app-dev.bigmatrix.in 
