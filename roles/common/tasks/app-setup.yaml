@@ -12,13 +12,24 @@
     path: /app
     state: directory
 
-- name: "download {{component}} application"
+# - name: "download {{component}} application"
+#   ansible.builtin.get_url:
+#     url: "https://roboshop-builds.s3.amazonaws.com/{{component}}.zip"
+#     dest: /tmp
+
+# - name: "extract {{component}} application"
+#   ansible.builtin.unarchive:
+#     src: "/tmp/{{component}}.zip"
+#     dest: /app
+#     remote_src: yes
+
+- name: Download  artifact from nuxus 
   ansible.builtin.get_url:
-    url: "https://roboshop-builds.s3.amazonaws.com/{{component}}.zip"
-    dest: /tmp
+    url: "{{NEXUS_url}}/{{component}}/{{group_id}}/{{component}}/{{app_version}}/{{component}}-{{app_version}}.zip"
+    dest: /app
 
 - name: "extract {{component}} application"
   ansible.builtin.unarchive:
-    src: "/tmp/{{component}}.zip"
+    src: "/tmp/{{component}}-{{app_version}}.zip"
     dest: /app
     remote_src: yes
