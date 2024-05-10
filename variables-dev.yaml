@@ -8,3 +8,5 @@ CART_HOST: cart.app-dev.bigmatrix.in
 SHIPPING_HOST: shipping.app-dev.bigmatrix.in 
 PAYMENT_HOST: payment.app-dev.bigmatrix.in 
 DISPATCH_HOST: dispatch.app-dev.bigmatrix.in 
+NEXUS_URL: http://18.212.158.244:8081/repository
+group_id: "com/roboshop"
