@@ -23,7 +23,7 @@
 #     dest: /app
 #     remote_src: yes
 
-- name: Download  artifact from nuxus 
+- name: Download artifact from nexus 
   ansible.builtin.get_url:
     url: "{{NEXUS_url}}/{{component}}/{{group_id}}/{{component}}/{{app_version}}/{{component}}-{{app_version}}.zip"
     dest: /app
